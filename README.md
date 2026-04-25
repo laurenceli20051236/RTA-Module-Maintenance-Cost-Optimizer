@@ -1,9 +1,11 @@
 # RTA Module Maintenance Cost Optimizer
 
 ## Overview
+
 This project is a data-driven cost optimization framework for Rapid Thermal Anneal (RTA) toolsets in semiconductor manufacturing.
 
 The goal is to improve preventive maintenance decision-making by combining:
+
 - high-frequency early warning signals
 - low-frequency electrical verification
 - failure risk estimation
