@@ -114,3 +114,6 @@ jupyter == 1.1.1
 notebook== 7.2.2
 
 ```
+## Limitations
+
+This is a portfolio simulation project using synthetic data. The model is intended to demonstrate semiconductor manufacturing analytics, cost modeling, and PM decision support logic. It does not use proprietary production data.
