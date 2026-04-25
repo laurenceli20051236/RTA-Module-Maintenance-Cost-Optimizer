@@ -54,8 +54,9 @@ data/processed/
 notebooks/
 src/rta_optimizer/
 reports/figures/
-
 ```
+
+---
 
 ## How to Review This Project
 
