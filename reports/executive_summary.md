@@ -14,7 +14,7 @@ This project introduces a two-tier monitoring strategy:
 
 ### Tier 1: High-Frequency Monitoring
 - Implant-based bare wafer
-- Haze / cross-section haze monitoring
+- Haze/cross-section haze monitoring
 - Every 3 days
 - Used for early drift detection, stage alignment, and process trend monitoring
 
