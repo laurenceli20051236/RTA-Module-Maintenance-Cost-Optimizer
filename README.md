@@ -47,17 +47,6 @@ This project redesigns the monitoring strategy into two layers:
 
 ---
 
-## Project Structure
-
-```text
-data/raw/
-data/processed/
-notebooks/
-src/rta_optimizer/
-reports/figures/
-```text
----
-
 ## How to Review This Project
 
 For a quick review:
@@ -78,5 +67,13 @@ For a quick review:
 ![Cost Breakdown](reports/figures/cost_breakdown.png)
 
 ---
+
+## Project Structure
+```text
+data/raw/
+data/processed/
+notebooks/
+src/rta_optimizer/
+reports/figures/
 
 
