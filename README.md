@@ -46,7 +46,7 @@ This project redesigns the monitoring strategy into two layers:
 - Lower risk of late-stage excursions
 
 ---
-
+```markdown
 ## Project Structure
 
 ```text
