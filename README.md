@@ -1,16 +1,5 @@
 # RTA Module Maintenance Cost Optimizer
 
----
-
-## How to Review This Project
-
-For a quick review:
-1. __Read:__ `reports/executive_summary.md`
-2. __Review:__ `src/rta_optimizer/cost_model.py`
-3. __Open:__ `notebooks/03_cost_optimization.ipynb`
-4. __Check exported figures:__ `reports/figures/`
-
----
 
 ## Overview
 
@@ -85,3 +74,13 @@ reports/figures/
 ## Key Results
 - **50% monitor cost reduction**
 - **15% scrap reduction**
+
+---
+
+## How to Review This Project
+
+__For a quick review:__
+1. __Read:__ `reports/executive_summary.md`
+2. __Review:__ `src/rta_optimizer/cost_model.py`
+3. __Open:__ `notebooks/03_cost_optimization.ipynb`
+4. __Check exported figures:__ `reports/figures/`
