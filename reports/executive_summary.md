@@ -6,7 +6,7 @@ High-frequency Rs monitor usage increases monitoring cost and consumes tool capa
 ## Objective
 Develop a two-tier monitoring strategy to lower cost while maintaining excursion protection.
 
-## Approach
+## Method
 - Early warning haze signal monitoring
 - Reduced-frequency electrical verification
 - Cost-risk optimization model
@@ -17,7 +17,7 @@ Develop a two-tier monitoring strategy to lower cost while maintaining excursion
 - ~$200K annual savings/toolset
 - 15% projected scrap risk reduction
 
-## Technical Methods
+## Technical Skills
 - SPC trend analysis
 - DOE sensitivity study
 - Cost optimization model
