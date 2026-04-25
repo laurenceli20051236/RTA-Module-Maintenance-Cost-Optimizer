@@ -59,7 +59,6 @@ For a quick review:
 
 ## Key Results
 
-```markdown
 ### Annual Cost Comparison
 ![Cost Comparison](reports/figures/cost_comparison.png)
 
