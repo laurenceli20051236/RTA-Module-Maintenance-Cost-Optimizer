@@ -46,6 +46,7 @@ This project redesigns the monitoring strategy into two layers:
 - Lower risk of late-stage excursions
 
 ---
+
 ```markdown
 ## Project Structure
 
@@ -56,8 +57,8 @@ notebooks/
 src/rta_optimizer/
 reports/figures/
 
-```text
 ---
+
 ## How to Review This Project
 
 For a quick review:
