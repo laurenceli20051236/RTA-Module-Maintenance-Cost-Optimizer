@@ -61,6 +61,14 @@ reports/figures/
 
 ---
 
+## Key Results
+
+- **~75% reduction** in Rs / SheetRho monitor wafer frequency
+- **~$200K estimated annual cost savings** per RTA toolset
+- **50% monitor cost reduction** through optimized verification strategy
+- **15% scrap reduction potential** by improving early drift detection
+---
+
 ### Annual Cost Comparison
 ![Cost Comparison](reports/figures/cost_comparison.png)
 
@@ -68,15 +76,6 @@ reports/figures/
 
 ### Annual Cost Breakdown
 ![Cost Breakdown](reports/figures/cost_breakdown.png)
-
----
-
-## Key Results
-
-- **~75% reduction** in Rs / SheetRho monitor wafer frequency
-- **~$200K estimated annual cost savings** per RTA toolset
-- **50% monitor cost reduction** through optimized verification strategy
-- **15% scrap reduction potential** by improving early drift detection
 
 ---
 
