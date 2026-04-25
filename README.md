@@ -99,6 +99,18 @@ jupyter == 1.1.1
 notebook== 7.2.2
 
 ```
+
+## Case Study Example
+
+Scenario:
+- Baseline PM interval: 30 days
+- Optimized interval: 45 days
+
+Results:
+- 75% monitor reduction
+- $200K annual savings
+- reduced modeled excursion risk
+
 ## Limitations
 
 This is a portfolio simulation project using synthetic data. The model is intended to demonstrate semiconductor manufacturing analytics, cost modeling, and PM decision support logic. It does not use proprietary production data.
