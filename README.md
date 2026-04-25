@@ -70,10 +70,16 @@ For a quick review:
 
 ---
 
-## Key Results
-
 ### Annual Cost Comparison
 ![Cost Comparison](reports/figures/cost_comparison.png)
 
+---
+
 ### Annual Cost Breakdown
 ![Cost Breakdown](reports/figures/cost_breakdown.png)
+
+---
+
+## Key Results
+- **50% monitor cost reduction**
+- **15% scrap reduction**
