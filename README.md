@@ -45,19 +45,6 @@ This project redesigns the monitoring strategy into two layers:
 - Improve early drift detection
 - Lower risk of late-stage excursions
 
----
-
-```markdown
-## Project Structure
-
-```text
-data/raw/
-data/processed/
-notebooks/
-src/rta_optimizer/
-reports/figures/
-
----
 
 ## How to Review This Project
 
@@ -77,3 +64,16 @@ For a quick review:
 ### Annual Cost Breakdown
 ![Cost Breakdown](reports/figures/cost_breakdown.png)
 
+---
+
+```markdown
+## Project Structure
+
+```text
+data/raw/
+data/processed/
+notebooks/
+src/rta_optimizer/
+reports/figures/
+
+---
