@@ -99,10 +99,11 @@ pip install -r requirements.txt
 ## Dependencies
 
 ```text
-Python >= 3.11+
-pandas >= 2.0.0
-numpy >= 1.26.0
-scikit-learn >= 1.4.0
-statsmodels >= 0.14.0
-
+pandas==2.2.3
+numpy==2.1.2
+matplotlib==3.9.2
+scipy==1.14.1
+scikit-learn==1.5.2
+statsmodels==0.14.4
+pyDOE2==1.3.0
 ```
