@@ -2,10 +2,10 @@
 
 
 ## Overview
-
-This project is a data-driven cost optimization framework for Rapid Thermal Anneal (RTA) toolsets in semiconductor manufacturing.
-
-The goal is to improve preventive maintenance decision-making by combining:
+A semiconductor manufacturing analytics project that combines
+SPC-informed early warning signals, Monte Carlo risk modeling,
+and preventive maintenance optimization to reduce monitoring cost
+while improving excursion risk control. This project is a data-driven cost optimization framework for Rapid Thermal Anneal (RTA) toolsets in semiconductor manufacturing. The goal is to improve preventive maintenance decision-making by combining:
 
 - high-frequency early warning signals
 - low-frequency electrical verification
