@@ -48,8 +48,8 @@ This project redesigns the monitoring strategy into two layers:
 ---
 
 ## Project Structure
-```text
-data/
+data/raw/
+data/processed/
 notebooks/
-src/
-reports/
+src/rta_optimizer/
+reports/figures/
