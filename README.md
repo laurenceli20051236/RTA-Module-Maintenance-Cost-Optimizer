@@ -13,7 +13,7 @@ This project proposes a two-tier monitoring strategy to reduce dependence on exp
 
 ---
 
-## Business Problem
+## Problem Statement
 Traditional RTA monitoring often relies on high-cost Rs/SheetRho monitor wafers, which:
 - require pre-treatment, ion implant, and dose verification
 - are expensive to run frequently
