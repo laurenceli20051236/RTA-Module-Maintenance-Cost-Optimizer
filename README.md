@@ -73,8 +73,10 @@ reports/figures/
 
 ## Key Results
 
-- **50% monitor cost reduction**
-- **15% scrap reduction**
+- **~75% reduction** in Rs / SheetRho monitor wafer frequency
+- **~$200K estimated annual cost savings** per RTA toolset
+- **50% monitor cost reduction** through optimized verification strategy
+- **15% scrap reduction potential** by improving early drift detection
 
 ---
 
@@ -90,7 +92,7 @@ __For a quick review:__
 
 ## Installation
 
-```text
+```bash
 pip install -r requirements.txt
 ```
 
@@ -99,11 +101,17 @@ pip install -r requirements.txt
 ## Dependencies
 
 ```text
-pandas==2.2.3
-numpy==2.1.2
-matplotlib==3.9.2
-scipy==1.14.1
-scikit-learn==1.5.2
-statsmodels==0.14.4
-pyDOE2==1.3.0
+This project uses:
+
+Python == 3.11+
+pandas == 2.2.3
+numpy == 2.1.2
+matplotlib == 3.9.2
+scipy == 1.14.1
+scikit-learn == 1.5.2
+statsmodels == 0.14.4
+pyDOE2 == 1.3.0
+jupyter == 1.1.1
+notebook== 7.2.2
+
 ```
