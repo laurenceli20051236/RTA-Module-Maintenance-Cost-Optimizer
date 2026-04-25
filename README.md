@@ -1,4 +1,4 @@
-# RTA-Module-Maintenance-Cost-Optimizer
+# RTA Module Maintenance Cost Optimizer
 
 ## Overview
 This project is a data-driven cost optimization framework for Rapid Thermal Anneal (RTA) toolsets in semiconductor manufacturing.
