@@ -26,19 +26,12 @@ As a result, the monitoring approach is costly and often reactive instead of pro
 
 ---
 
-## Proposed Solution
-This project redesigns the monitoring strategy into two layers:
+## Methodology
 
-### Tier 1: High-Frequency Monitoring
-- Implant-based bare wafer
-- Haze/cross-section haze measurement
-- Every 3 days
-- Used for early drift detection, stage alignment, and process trend monitoring
-
-### Tier 2: Low-Frequency Verification
-- Rs / SheetRho monitor wafer
-- Every 2 weeks to monthly
-- Used for long-term uniformity verification and model calibration
+1. Signal-Based Early Drift Detection
+2. Failure Risk Modeling (Monte Carlo)
+3. PM Interval Optimization
+4. Sensitivity Analysis
 
 ---
 
