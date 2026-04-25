@@ -99,9 +99,9 @@ pip install -r requirements.txt
 ## Dependencies
 
 ```text
-Python 3.11+
-Pandas
-NumPy
-Scikit-learn
-Statsmodels
+Python>=3.11+
+pandas>=2.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+statsmodels>=0.14.0
 ```
