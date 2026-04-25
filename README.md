@@ -89,11 +89,15 @@ __For a quick review:__
 ---
 
 ## Installation
+
+```text
 pip install -r requirements.txt
+```
 
 ---
 
 ## Dependencies
+
 ```text
 Python 3.11+
 Pandas
