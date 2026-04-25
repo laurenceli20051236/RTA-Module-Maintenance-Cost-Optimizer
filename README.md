@@ -56,8 +56,8 @@ notebooks/
 src/rta_optimizer/
 reports/figures/
 
+```text
 ---
-
 ## How to Review This Project
 
 For a quick review:
@@ -75,3 +75,4 @@ For a quick review:
 
 ### Annual Cost Breakdown
 ![Cost Breakdown](reports/figures/cost_breakdown.png)
+
