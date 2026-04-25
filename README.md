@@ -48,6 +48,8 @@ This project redesigns the monitoring strategy into two layers:
 ---
 
 ## Project Structure
+
+```text
 data/raw/
 data/processed/
 notebooks/
