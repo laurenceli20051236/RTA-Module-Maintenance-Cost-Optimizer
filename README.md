@@ -55,3 +55,23 @@ data/processed/
 notebooks/
 src/rta_optimizer/
 reports/figures/
+
+---
+
+## How to Review This Project
+
+For a quick review:
+1. Read `reports/executive_summary.md`
+2. Review `src/rta_optimizer/cost_model.py`
+3. Open `notebooks/03_cost_optimization.ipynb`
+4. Check exported figures in `reports/figures/`
+
+---
+
+## Key Results
+
+### Annual Cost Comparison
+![Cost Comparison](reports/figures/cost_comparison.png)
+
+### Annual Cost Breakdown
+![Cost Breakdown](reports/figures/cost_breakdown.png)
