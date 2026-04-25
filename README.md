@@ -85,3 +85,14 @@ __For a quick review:__
 2. __Review:__ `src/rta_optimizer/cost_model.py`
 3. __Open:__ `notebooks/03_cost_optimization.ipynb`
 4. __Check exported figures:__ `reports/figures/`
+
+---
+
+## Installation
+pip install -r requirements.txt
+
+---
+
+## Dependencies
+Python 3.11+
+Pandas, NumPy, Scikit-learn, Statsmodels
