@@ -61,10 +61,10 @@ reports/figures/
 ## How to Review This Project
 
 For a quick review:
-1. Read: `reports/executive_summary.md`
-2. Review: `src/rta_optimizer/cost_model.py`
-3. Open: `notebooks/03_cost_optimization.ipynb`
-4. Check exported figures: `reports/figures/`
+1. __Read:__ `reports/executive_summary.md`
+2. __Review:__ `src/rta_optimizer/cost_model.py`
+3. __Open:__ `notebooks/03_cost_optimization.ipynb`
+4. __Check exported figures:__ `reports/figures/`
 
 ---
 
