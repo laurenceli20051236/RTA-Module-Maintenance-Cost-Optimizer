@@ -1,40 +1,131 @@
 # Executive Summary
 
 ## Project Title
-RTA Maintenance Cost Optimizer
+**RTA Maintenance Cost Optimizer**
 
-## Objective
-This project develops a data-driven framework to optimize preventive maintenance strategy and monitoring cost for Rapid Thermal Anneal (RTA) toolsets in semiconductor manufacturing.
+---
 
-## Business Problem
-Traditional RTA monitoring relies heavily on high-cost Rs / SheetRho monitor wafers. These wafers require additional pre-treatment, ion implant, and verification steps, making them expensive and inefficient for high-frequency monitoring. In addition, Rs is a result metric and is not well suited for early drift detection.
+## 1. Business Problem
 
-## Proposed Solution
-This project introduces a two-tier monitoring strategy:
+In advanced semiconductor manufacturing, Rapid Thermal Anneal (RTA) process monitoring often relies on high-frequency **Rs / SheetRho monitor wafers** to verify thermal uniformity and process health.
+
+However, this approach has several limitations:
+
+- Rs monitor wafers are expensive
+- A single Rs monitor wafer may cost **$5,000 or more**
+- Additional steps such as pre-treatment, ion implant, and implant verification further increase total cost
+- Rs is a **result metric**, not an early warning signal
+- Weekly Rs monitoring creates a high recurring cost burden while still reacting relatively late to process drift
+
+As a result, the traditional monitoring method is costly and operationally inefficient.
+
+---
+
+## 2. Project Objective
+
+The objective of this project is to create a **data-driven maintenance and monitoring cost optimization framework** for RTA toolsets.
+
+The framework is designed to:
+
+- reduce the frequency of expensive Rs monitoring
+- improve early detection of process drift
+- maintain long-term confidence in thermal uniformity
+- provide a clear cost justification for a revised monitoring strategy
+
+---
+
+## 3. Proposed Monitoring Strategy
+
+This project introduces a **two-tier monitoring architecture**.
 
 ### Tier 1: High-Frequency Monitoring
-- Implant-based bare wafer
-- Haze/cross-section haze monitoring
-- Every 3 days
-- Used for early drift detection, stage alignment, and process trend monitoring
+- **Monitor type:** Implant-based bare wafer
+- **Measurement:** Haze / cross-section haze
+- **Frequency:** Every 3 days
+- **Purpose:**
+  - early drift detection
+  - stage alignment monitoring
+  - process trend tracking
 
 ### Tier 2: Low-Frequency Verification
-- Rs / SheetRho monitor wafer
-- Every 2 weeks to monthly
-- Used for long-term uniformity verification and model calibration
+- **Monitor type:** Rs / SheetRho monitor wafer
+- **Frequency:** Every 2 weeks to monthly
+- **Purpose:**
+  - long-term uniformity verification
+  - model calibration
+  - electrical sanity check
 
-## Technical Approach
-The project combines:
-- SPC-based monitoring
-- Failure risk modeling
-- Monitoring cost analysis
-- Preventive maintenance decision logic
+This separates **early indicators** from **final verification metrics**, which improves both cost efficiency and monitoring effectiveness.
 
-## Estimated Impact
-- Reduce Rs monitor frequency by approximately 75%
-- Save about $200K annually per RTA toolset
+---
+
+## 4. Technical Approach
+
+The framework combines the following components:
+
+- **SPC-based monitoring**
+  - detect gradual drift using early process signals
+- **Cost model**
+  - compare baseline strategy versus optimized strategy
+- **Failure risk consideration**
+  - include expected annual failure cost in total strategy comparison
+- **Decision logic**
+  - balance monitoring cost, preventive maintenance cost, and failure risk
+
+---
+
+## 5. Estimated Financial Impact
+
+### Baseline Strategy
+- Weekly Rs monitoring
+- High recurring monitor wafer cost
+- High annual monitoring burden
+
+### Optimized Strategy
+- High-frequency haze monitoring every 3 days
+- Monthly Rs verification
+- Lower total annual monitoring cost
+
+### Estimated Savings
+- Reduce Rs monitor frequency by approximately **75%**
+- Save approximately **$200K annually per RTA toolset**
 - Improve early drift detection capability
 - Reduce risk of late-stage excursions
 
-## Key Takeaway
-This project is not only a predictive model, but a decision-making framework that aligns process control strategy with cost efficiency in semiconductor manufacturing.
+---
+
+## 6. Key Insight
+
+The main insight behind this project is:
+
+> **Rs is an important verification metric, but it is not the right signal to use as a high-frequency early warning monitor.**
+
+By redesigning the monitoring strategy to use lower-cost, higher-frequency signals for early detection and reserving Rs for low-frequency verification, the process becomes both more economical and more proactive.
+
+---
+
+## 7. Project Value
+
+This project demonstrates the ability to integrate:
+
+- semiconductor process understanding
+- maintenance strategy design
+- cost modeling
+- SPC thinking
+- manufacturing decision logic
+
+This is not only a technical analysis project, but also a **manufacturing decision-making framework**.
+
+---
+
+## 8. Conclusion
+
+The RTA Maintenance Cost Optimizer provides a practical and scalable way to reduce monitoring cost while maintaining process control in semiconductor manufacturing.
+
+It shows how a monitoring strategy can be redesigned using engineering logic and cost-based justification, rather than simply increasing measurement frequency.
+
+The framework can be further extended to:
+- more detailed failure prediction models
+- dashboard-based monitoring
+- real-time factory integration
+- adaptation to other semiconductor toolsets
