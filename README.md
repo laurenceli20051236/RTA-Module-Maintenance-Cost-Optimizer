@@ -31,7 +31,7 @@ This project redesigns the monitoring strategy into two layers:
 
 ### Tier 1: High-Frequency Monitoring
 - Implant-based bare wafer
-- Haze / cross-section haze measurement
+- Haze/cross-section haze measurement
 - Every 3 days
 - Used for early drift detection, stage alignment, and process trend monitoring
 
@@ -94,5 +94,10 @@ pip install -r requirements.txt
 ---
 
 ## Dependencies
+```text
 Python 3.11+
-Pandas, NumPy, Scikit-learn, Statsmodels
+Pandas
+NumPy
+Scikit-learn
+Statsmodels
+```
