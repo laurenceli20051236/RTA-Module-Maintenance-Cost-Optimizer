@@ -89,14 +89,6 @@ __For a quick review:__
 
 ---
 
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 ## Dependencies
 
 ```text
