@@ -72,6 +72,7 @@ reports/figures/
 ---
 
 ## Key Results
+
 - **50% monitor cost reduction**
 - **15% scrap reduction**
 
