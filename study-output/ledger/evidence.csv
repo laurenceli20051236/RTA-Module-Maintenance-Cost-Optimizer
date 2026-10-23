@@ -122,3 +122,27 @@ C239,Millisecond laser anneal range several hundred us to 10 ms,S001,p.9,to 10 m
 C240,"Si:P full-melt UV laser anneal condition 1.8 J/cm2, 160 ns (ms anneal reference 1200 C)",S002,p.3,"(1.8J/cm2, 160ns)",direct,high,
 C241,SiC sub-melt TEM sample subjected to 0.40 J/cm2 laser fluence,S001,p.5,subjected to 0.40J/cm2 laser fluence,direct,medium,
 C242,Fine segregation: Sb in Si and Ga/Al/In in SiGe segregate to surface during ns UV-LA LPER,S003,p.6,shows such a surface segregation during ns UV-LA-induced LPER,direct,low,
+C601,S004 conclusion: laser annealing operates under thermodynamic non-equilibrium,S004,p.17,operates under thermodynamic non-equilibrium,direct,medium,Contrast with S003 p.19 (C228)
+C602,LTA is process of record in HVM for vertical Si/SiC power devices and CMOS image sensors,S002,p.1,process of record,direct,high,Scope differs from CMOS logic (C301)
+C603,"For traditional CMOS logic, sub-us annealing lacks a good enough benefit/complexity tradeoff; laser adopted only in ms regime for niche uses",S001,p.30,do not show a good enough tradeoff between the expected benefit and the complexity,direct,high,
+C604,3D NAND channel crystallization not easily accessible to sub-us laser (several um depth vs fragile charge-trap layers),S001,p.26,ily accessible to sub-,direct,high,
+C605,PCRAM GST memory layer should not exceed 300-600 C depending on composition,S001,p.27,should not be heated at temperatures higher than 300,direct,high,
+C606,PIN diode stack deposited by low-temperature LPCVD (<550 C); laser process window found,S001,p.27,temperature LPCVD (<550,direct,high,
+C607,S002 phrasing: band gap too large to emit phonons by photon excitation above UV,S002,p.8,emit phonons by photon excitation with wavelengths above the UV,direct,medium,"Physically imprecise wording (absorption creates e-h pairs, then phonons)"
+C608,ns SPER test structure: amorphous Si on SiO2 on Si substrate (SOI-type stack),S003,p.10,in a structure of amorphous,direct,medium,Caption; BOX gives thermal confinement
+C609,"SPER primary reference [46]: Acosta Alba et al., multi-pulse ns laser annealing, Appl. Surf. Sci. Adv. 2021",S003,p.22,Solid phase recrystallization induced by multi-pulse,direct,high,"Co-authors include non-vendor institute (Kerdiles, Grenier); affiliation not stated in S003"
+C610,us SPER reference [57]: As ion-implanted SOI by microsecond UV laser annealing,S003,p.23,Arsenic Ion-Implanted Silicon-On-Insulator by Microsecond UV Laser Annealing,direct,high,
+C611,"Segregation k(V) model reference: Wood 1980, nonequilibrium segregation during pulsed laser annealing",S003,p.22,Model for nonequilibrium segregation during pulsed laser annealing,direct,high,
+C612,Thermal budget empirically discussed as combination of temperature (activation energy) and time (kinetics),S003,p.2,simple combination of temperature,direct,high,
+C613,Thicker SiO2 interlayer gives more efficient thermal isolation; fluence is another knob,S003,p.3,results in more efficient thermal,direct,high,
+C614,3D NAND poly-Si channel LTA at 2.0 and 1.6 J/cm2 enlarged grains; >5x drive current vs furnace,S001,p.29,improvement in drive current,direct,high,
+C615,Laser-annealed HfO2 crystallinity cumulatively improved by repeating pulses (ns nucleation),S001,p.22,cumulatively improved,direct,medium,Multi-pulse cumulative solid-state transformation analog
+C616,Fast heating/cooling supposed to prevent monoclinic HfO2 nucleation,S001,p.22,supposed to prevent the nucleation and crystal growth,direct,medium,
+C617,Melt anneal: extended defects form at top of non-melted region if implant tail not molten,S003,p.9,precipitate in the form of extended defects,direct,high,
+C618,Implanted region has lower melting temperature and lower reflectivity than unimplanted Si (similar to a-Si vs c-Si),S002,p.2,lower surface melting,direct,high,
+C619,"Ge implanted P 1e15, 15 keV and As 1e15, 28 keV give 33 and 40 nm amorphous layers; ED 0.55-1.05 J/cm2 at 160 ns",S002,p.5,ranging from 0.55 to 1.05J/cm2,direct,high,
+C620,Ge melt junctions: deep-level defects give trap-assisted tunneling leakage,S002,p.5,trap-assisted tunneling,direct,high,
+C621,Pattern effect: process window shifted down ~50 C for smallest number of fins,S001,p.17,for the smallest number of fins,direct,high,
+C622,SPER rate extracted as a function of laser energy density (Fig. 10d),S003,p.10,recrystallization rates for each sample as a function of laser,direct,high,
+C623,LT-3100 beam non-uniformity below +/-4 % over 26 mm x 33 mm,S002,p.1,beam non-uniformity over 26mm,direct,high,
+C624,"The 900 C / 1e-7 s ns UV-LA condition belongs to the SiO2/Si gate-stack (BTI) study, not to SPER",S003,p.4,relevant to the potential BTI source annihilation,direct,high,Do not transfer to SPER modelling without caveat
