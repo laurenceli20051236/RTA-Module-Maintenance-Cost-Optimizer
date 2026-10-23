@@ -34,7 +34,12 @@ NUM_RE = re.compile(r"\d")
 
 
 def norm(text: str) -> str:
-    return re.sub(r"\s+", " ", text.replace(" ", " ")).strip().lower()
+    return re.sub(r"\s+", " ", text.replace("\u00a0", " ")).strip().lower()
+
+
+def squash(text: str) -> str:
+    """Whitespace-free form for quote matching; PDF extraction drops or doubles spaces."""
+    return re.sub(r"\s+", "", text.replace("\u00a0", " ")).lower()
 
 
 def sha256(path: Path) -> str:
@@ -263,10 +268,10 @@ def validate_matrix(root: Path) -> tuple[dict, dict]:
                 if loc_text is None:
                     errs.append(f"locator {r['locator']!r} not found in {sid}")
                 elif r["support"].strip() == "direct":
-                    q = norm(r["quote"])
+                    q = squash(r["quote"])
                     if not q:
                         errs.append("direct support requires a verbatim quote")
-                    elif q not in norm(loc_text):
+                    elif q not in squash(loc_text):
                         errs.append("quote not found verbatim at locator")
                 elif not r["note"].strip():
                     errs.append("derived/inferred claims need a note explaining the step")
@@ -346,6 +351,54 @@ def _references(root: Path, md_files: list[Path]) -> str:
     return "\n".join(lines) + "\n"
 
 
+PDF_CSS = """
+body{font-family:"Noto Sans CJK TC","WenQuanYi Zen Hei","DejaVu Sans",sans-serif;font-size:10.5pt;line-height:1.55;max-width:none;margin:0}
+table{border-collapse:collapse;width:100%;font-size:9pt;margin:.6em 0}
+th,td{border:1px solid #888;padding:3px 5px;vertical-align:top}
+th{background:#eee} h1,h2,h3{page-break-after:avoid} tr{page-break-inside:avoid}
+math[display="block"]{margin:.6em 0}
+"""
+
+
+def _find_chromium() -> str | None:
+    for n in ("chromium", "chromium-browser", "google-chrome", "chrome"):
+        if shutil.which(n):
+            return shutil.which(n)
+    import glob
+    for pat in ("/opt/pw-browsers/chromium-*/chrome-linux*/chrome", "/opt/pw-browsers/chromium_headless_shell-*/chrome-linux*/headless_shell"):
+        hits = sorted(glob.glob(pat))
+        if hits:
+            return hits[-1]
+    return None
+
+
+def _export_pdf(pandoc: str, combined: Path, outdir: Path, name: str) -> Path:
+    """PDF with MathML equations via headless Chromium; LibreOffice fallback drops math if libreoffice-math is absent."""
+    out = outdir / f"{name}.pdf"
+    chrome = _find_chromium()
+    if chrome:
+        css = outdir / f".{name}.css"
+        html = outdir / f".{name}.pdf.html"
+        css.write_text(PDF_CSS, encoding="utf-8")
+        subprocess.run([pandoc, str(combined), "-o", str(html), "--standalone", "--mathml", "--toc",
+                        "--metadata", f"title={name}", "--css", css.name, "--embed-resources"], check=True)
+        subprocess.run([chrome, "--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
+                        f"--print-to-pdf={out.resolve()}", html.resolve().as_uri()], check=True, capture_output=True)
+        html.unlink(missing_ok=True)
+        css.unlink(missing_ok=True)
+        return out
+    print("WARN: no chromium; using LibreOffice - equations are dropped when libreoffice-math is not installed", file=sys.stderr)
+    docx = outdir / f"{name}.docx"
+    if not docx.exists():
+        subprocess.run([pandoc, str(combined), "-o", str(docx), "--toc"], check=True)
+    office = shutil.which("soffice") or shutil.which("libreoffice")
+    if not office:
+        sys.exit("no chromium or soffice for pdf export")
+    subprocess.run([office, "--headless", "--convert-to", "pdf", "--outdir", str(outdir), str(docx)],
+                   check=True, capture_output=True)
+    return out
+
+
 def cmd_export(a):
     root = Path(a.root)
     P = paths(root)
@@ -377,15 +430,8 @@ def cmd_export(a):
             subprocess.run(cmd, check=True)
             outs.append(out)
         elif fmt == "pdf":
-            docx = P["export"] / f"{name}.docx"
-            if not docx.exists():
-                subprocess.run([pandoc, str(combined), "-o", str(docx), "--toc"], check=True)
-            office = shutil.which("soffice") or shutil.which("libreoffice")
-            if not office:
-                sys.exit("no soffice/libreoffice for pdf export")
-            subprocess.run([office, "--headless", "--convert-to", "pdf", "--outdir", str(P["export"]), str(docx)],
-                           check=True, capture_output=True)
-            outs.append(P["export"] / f"{name}.pdf")
+            out = _export_pdf(pandoc, combined, P["export"], name)
+            outs.append(out)
     for o in outs:
         print(o, o.stat().st_size if o.exists() else "MISSING")
         if not o.exists():

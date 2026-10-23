@@ -1,0 +1,44 @@
+{
+  "sources": {
+    "S001": {
+      "path": "sources/Chapter-4---Laser-annealing-applications-fo_2021_Laser-Annealing-Processes-i.pdf",
+      "title": "Huet K., Chapter 4 Laser annealing applications for semiconductor device manufacturing, in Laser Annealing Processes in Semiconductor Technology (Elsevier, 2021)",
+      "type": "pdf",
+      "bytes": 4348923,
+      "sha256": "afb2fe9bf6f7a4a3c01411332a7949c15b4a7ab1ee656b623af218fcf143b18d",
+      "extracted": true,
+      "reliability": "secondary; vendor-affiliated (SCREEN LASSE); printed page = PDF page + 136",
+      "notes": ""
+    },
+    "S002": {
+      "path": "sources/Doping_of_semiconductor_devices_by_Laser_Thermal_Annealing.pdf",
+      "title": "Huet K. et al., Doping of semiconductor devices by Laser Thermal Annealing, Mater. Sci. Semicond. Process. (2016), preprint pagination",
+      "type": "pdf",
+      "bytes": 1889924,
+      "sha256": "e0bbbdafb041f5cb4308fd93d259eae9de81a0cda98dd9ae7b537a469ed5d02a",
+      "extracted": true,
+      "reliability": "secondary; vendor-affiliated (SCREEN LASSE)",
+      "notes": ""
+    },
+    "S003": {
+      "path": "sources/Recent_Progresses_and_Perspectives_of_UV_Laser_Annealing_Technologies_for_Advanced_CMOS_Devices.pdf",
+      "title": "Tabata T. et al., Recent Progresses and Perspectives of UV Laser Annealing Technologies for Advanced CMOS Devices, Electronics 11, 2636 (2022)",
+      "type": "pdf",
+      "bytes": 7058799,
+      "sha256": "06205cf035fd4a3cd15addad7bd328d70bb529dac439e60e2b229a74f15bb7fb",
+      "extracted": true,
+      "reliability": "secondary; vendor-affiliated (SCREEN LASSE)",
+      "notes": ""
+    },
+    "S004": {
+      "path": "sources/Silicon_and_Silicon_Carbide_Recrystallization_by_Laser_Annealing_-_A_Review.pdf",
+      "title": "Arduino D. et al., Silicon and Silicon Carbide Recrystallization by Laser Annealing: A Review, Materials 16, 7674 (2023)",
+      "type": "pdf",
+      "bytes": 4892757,
+      "sha256": "65551cd3e9442501b4414fd094a3de2594c18629921a62694100decdad59a336",
+      "extracted": true,
+      "reliability": "secondary; academic, independent of laser vendor; PDF has duplicated text layer on some pages",
+      "notes": ""
+    }
+  }
+}

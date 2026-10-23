@@ -2,7 +2,7 @@
 name: engineering-study-builder
 description: Master workflow that turns a folder of engineering documents (PDF, DOCX, Markdown, tables) into a source-traceable study package - source inventory, text/table/equation extraction, evidence matrix, cross-source synthesis, technical curriculum, textbook chapters, scientific and citation QA, and Markdown/DOCX/PDF export. Use when asked to build a study guide, technical textbook, training curriculum, or literature-based report from local engineering sources (semiconductor process, equipment, reliability, maintenance, cost). Every claim must resolve to a source ID plus locator. Runs fully local, no paid APIs.
 license: MIT
-compatibility: Python 3.10+ with pdfplumber, python-docx and reportlab (selftest only); pandoc and LibreOffice (soffice) for DOCX/PDF export. No network and no API keys required. Reuses sibling skills markitdown, liteparse, literature-review, citation-management, scientific-writing, scholar-evaluation, scientific-critical-thinking, uncertainty-and-units, sympy, statistical-analysis, markdown-mermaid-writing and scientific-visualization when present.
+compatibility: Python 3.10+ with pdfplumber, python-docx and reportlab (selftest only); pandoc, plus Chromium (preferred) or LibreOffice (soffice) for PDF export. No network and no API keys required. Reuses sibling skills markitdown, liteparse, literature-review, citation-management, scientific-writing, scholar-evaluation, scientific-critical-thinking, uncertainty-and-units, sympy, statistical-analysis, markdown-mermaid-writing and scientific-visualization when present.
 allowed-tools: Read Write Edit Bash Glob Grep
 metadata:
   version: "1.0"
@@ -46,7 +46,7 @@ Driver: `python3 scripts/study.py --root study <command>` (path relative to this
 | 5 | Curriculum design | `drafts/curriculum.md`: audience, prerequisites, learning objectives (measurable verbs), module sequence, exercises, assessment; each module lists the claim IDs it teaches; **markdown-mermaid-writing** for dependency graphs | Each objective maps to >=1 claim ID and one exercise |
 | 6 | Textbook chapters | One `drafts/chNN.md` per module following `references/chapter-template.md`; **scientific-writing** for prose standards; **scientific-visualization** + matplotlib for figures plotted from extracted CSV tables only | Figures cite the table source in the caption |
 | 7 | Accuracy + citation QA | `study.py qa` (hard errors) then `study.py qa --strict` (warnings fail); **uncertainty-and-units** `audit_units.py`/`convert_units.py` for calculations; **sympy** to verify symbolic equations and dimensional consistency; **statistical-analysis** for statistics; **scientific-writing** `check_references.py`, `audit_claims.py` | See "QA checklist" |
-| 8 | Export | `study.py export --name book --formats md docx pdf` (blocked if QA has errors); appends References built from inventory (ID, title, path, hash) | Output opened/size-checked; PDF produced via pandoc -> DOCX -> LibreOffice |
+| 8 | Export | `study.py export --name book --formats md docx pdf` (blocked if QA has errors); appends References built from inventory (ID, title, path, hash) | Output opened/size-checked; PDF via pandoc -> HTML (MathML) -> headless Chromium so equations render; LibreOffice fallback drops equations when libreoffice-math is missing; DOCX keeps native equations |
 
 Sequential order matters: do not draft (4-6) before the matrix (3) passes, and do not export (8) before QA (7) has zero errors.
 
@@ -77,7 +77,7 @@ Locators are exactly as produced by extraction: `p.N`, `p.N table K`, `para N`, 
 
 - Locator not found: re-open the extracted block, fix the locator; do not edit the quote to match.
 - Source changed after inventory: `extract` warns; re-run `inventory` (new hash gets a new ID) and re-check dependent claims.
-- Missing optional tools: pdfplumber absent -> use **liteparse**/**markitdown**; pandoc/soffice absent -> deliver Markdown and say which formats were not produced.
+- Missing optional tools: pdfplumber absent -> use **liteparse**/**markitdown**; pandoc absent, or neither Chromium nor soffice -> deliver Markdown and say which formats were not produced.
 
 ## Verification
 

@@ -68,12 +68,18 @@ def main():
 
         (root / "drafts" / "ch1.md").write_text(
             "# Chapter 1\n\nLamp life is 1200 hours [C001] and the leak limit holds [@" + DOCX + " para 1].\n\n"
-            "The time constant follows tau = R C [@" + PDF + " p.1].\n", encoding="utf-8")
+            "The time constant follows tau = R C [@" + PDF + " p.1].\n\n$$\\Delta x = N v$$ {own}\n", encoding="utf-8")
         run(root, "qa")
         run(root, "export", "--name", "ch1", "--formats", "md", "docx", "pdf")
         for ext in ("md", "docx", "pdf"):
             f = root / "export" / f"ch1.{ext}"
             assert f.exists() and f.stat().st_size > 150, f
+        import shutil as _sh
+        if _sh.which("pdftotext"):
+            txt = subprocess.run(["pdftotext", str(root / "export" / "ch1.pdf"), "-"], capture_output=True, text=True).stdout
+            import unicodedata
+            flat = unicodedata.normalize("NFKC", txt).replace(" ", "").replace("\n", "")
+            assert "Δx=Nv" in flat, "equation missing from PDF"
         assert PDF in (root / "export" / "ch1.md").read_text() and "sha256" in (root / "export" / "ch1.md").read_text()
 
         # negative controls: every traceability failure must be caught

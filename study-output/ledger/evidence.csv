@@ -1,0 +1,124 @@
+claim_id,claim,source_id,locator,quote,support,confidence,note
+C001,Beer-Lambert: I(z)=I0 exp(-alpha z); absorption depth delta=1/alpha,S004,p.3,is denoted as δ=1/α,direct,high,
+C002,"S004 states penetration depth ∝ λ/4πk and calls k the ""absorption coefficient"" (k is the extinction coefficient; alpha=4πk/λ)",S004,p.5,the penetration depth is proportional to λ/4πk,direct,high,Terminology error in source; flagged in chapter
+C003,"Energy transfer from laser field to phonons <1 ps, leading to near-surface melting",S004,p.3,quickly transferred to phonons in less than 1 picosecond,direct,high,
+C004,Thermalization time of non-metals quoted as 1e-8 to 1e-6 s,S004,p.4,can be from 10−8 s to 10−6 s,direct,medium,Internally inconsistent with C003; flagged
+C005,CW and ns pulses: single-photon absorption assumed dominant,S004,p.3,single-photon interactions account for most of the absorption,direct,high,
+C006,Melt model: molten layer over the amorphous thickness solidifies on a crystalline seed (liquid-phase-epitaxy-like),S004,p.3,molten layer that extends all over the amorphous thickness and whose subsequent solidification occurs on a crystalline seed,direct,high,
+C007,Silicon band gap 1.1 eV; threshold wavelength about 1100 nm,S004,p.6,has a bandgap energy of 1.1 eV,direct,high,
+C008,S004 says crystallization occurs when photon energy matches the band gap,S004,p.6,crystallization occurs when the photon energy,direct,medium,Imprecise: absorption needs photon energy >= Eg; contrasts with C029
+C009,"Salman et al.: 1064 nm, 200 ns pulses crystallized a-Si, Raman peak confirms",S004,p.6,pulse duration of 200 ns,direct,high,
+C010,"Garcia et al. a-Si, 355 nm: F1 = 70 and F2 = 374 mJ/cm2",S004,p.7,F1 and F2 values are 70 mJ/cm2 and 374 mJ/cm2,direct,high,
+C011,"Garcia et al. a-Si, 532 nm: F1 = 110 and F2 = 304 mJ/cm2",S004,p.7,F1 and F2 values are 110 mJ/cm2 and 304 mJ/cm2,direct,high,
+C012,Fluence above F2 gives ablation and damage; below F1 no melting,S004,p.7,exceeding the F2 threshold results in ablation and material damage,direct,high,
+C013,"Table 1 lists 478 mJ/cm2 for 532 nm, 12-15 ns (above the F2=304 stated in text)",S004,p.10,Green (532 nm) 12–15ns Gaussian / 478mJ/cm2,direct,medium,Quote whitespace-insensitive
+C014,"Table 1 lists 240 mJ/cm2 for 355 nm, 12-15 ns",S004,p.10,UV(355nm) 12–15ns Gaussian / 240mJ/cm2,direct,medium,
+C015,Raman crystalline fraction fc from integrated Raman intensities (Eq. 2),S004,p.9,scattering intensity of crystalline and amorphous sections,direct,high,
+C016,fc = 90.6 % (BLA) and 88.2 % (GLA),S004,p.9,The fc values were 90.6% for BLA and 88.2% for GLA,direct,high,
+C017,"GLA test: 30 ns, 86 nJ pulse, energy density 153 mJ/cm2",S004,p.9,pulse energy of 86 nJ and an energy density of 153 mJ/cm2,direct,high,
+C018,"Beam waist about 6 um, Gaussian profile (GLA test)",S004,p.9,beam waist of approximately 6,direct,high,
+C019,"Raman peak 513 cm-1 called a ""blue shift"" of ~7 cm-1 vs c-Si (520 cm-1) - a downshift is a red shift",S004,p.7,The sharp peak exhibits a blue shift of approximately 7,direct,high,Terminology error in source; flagged
+C020,Debate whether laser recrystallization of SiC is solid-state or liquid-phase,S004,p.11,A subject of ongoing discussion is whether laser-induced recrystallization occurs,direct,high,
+C021,Hishida (solid-phase) vs Ahmed (liquid-phase) with the same XeCl laser class on Al-implanted 6H-SiC,S004,p.11,Hishida et al. [95] reported solid-phase recrystallization while Ahmed et al. [99] reported liquid-phase recrystallization,direct,high,
+C022,"Urban 25 ns pulses: solid-phase crystallization of SiC judged unlikely, metastable liquid proposed",S004,p.13,solid-phase crystallization seems unlikely,direct,high,
+C023,"Baeri: 694 nm, 25 ns ruby laser caused a solid-phase transformation of a-SiC",S004,p.13,caused a solid-phase transformation of amorphous SiC into the crystal phase,direct,high,
+C024,Same Baeri description invokes equilibrium with liquid SiC and solidification,S004,p.13,reached its equilibrium temperature with the liquid SiC and underwent solidification,direct,high,Internal tension with C023; flagged
+C025,"Urban: SiC crystallized above 250 mJ/cm2 (25 ns KrF, 400 C stage)",S004,p.13,fluence higher than 250 mJ/cm2,direct,high,
+C026,Fluence far above threshold segregates SiC into Si and graphite,S004,p.13,Fluences significantly exceeding the crystallization threshold resulted in the,direct,high,
+C027,Lower carbon content favors Si/graphite phase segregation,S004,p.17,lower carbon content can result in phase segregation,direct,high,
+C028,S004 summary: Si laser annealing is a well-established technique for crystallization and doping activation,S004,p.17,has evolved into a well-established technique for crystallization and doping activation,direct,medium,
+C029,S004: 248 nm UV photon energy about 4.9 eV vs a-SiC gap 2-2.5 eV,S004,p.15,the energy associated with UV photons (248 nm) is about 4.9 eV,direct,high,hc/lambda gives 4.999 eV
+C030,"Furnace annealing above 1000 C damages devices, redistributes impurities",S004,p.1,annealing methods involve heating samples to high temperatures (above 1000,direct,high,
+C031,"Review authors: Politecnico di Torino (academic, independent of laser vendor)",S004,p.1,"Department of Applied Science and Technology, Politecnico di Torino",direct,high,
+C101,LTA tool: assisted heating up to 450 C,S002,p.1,assisted heating (up to 450°C),direct,high,
+C102,LTA pulse duration 160 ns,S002,p.1,relatively short pulse duration (160ns),direct,high,
+C103,Melting threshold of Ge-implanted Si below 0.25 J/cm2,S002,p.2,(<0.25J/cm2),direct,high,
+C104,Melting threshold of pure Si 1.7 J/cm2,S002,p.2,(1.7J/cm2),direct,high,Wavelength not stated in S002 text
+C105,Sn in Ge: no significant diffusion in non-melt regime,S002,p.2,no significant diffusion is observed,direct,high,
+C106,Sn in Ge: melt regime segregates Sn near surface above solid-phase solubility,S002,p.2,Sn segregates near the surface above the solid phase solubility,direct,high,
+C107,"Si:P: ms anneal alone best solid-phase result, ~5 nm diffusion",S002,p.3,about 5nm diffusion is observed by SIMS,direct,high,
+C108,"Si:P full-melt UV laser: all P active, ~3 nm diffusion",S002,p.4,"all the P content is active, with only 3nm diffusion in depth",direct,high,
+C109,"B 1e16 cm-2, 1 keV, melt anneal 2 J/cm2 160 ns; junction ~40 nm; 4% strain with single shot",S002,p.4,show a 4% strain level,direct,high,
+C110,"High-dose B junction about 40 nm deep, no residual defects in TEM",S002,p.4,junction is about 40nm deep,direct,high,
+C111,Ge: defect-free layer only if a/c interface and EOR defects fully molten (1.05 J/cm2),S002,p.5,a defect-free layer can only be achieved,direct,high,
+C112,3D sequential top tier: activation must rely on SPER or surface-confined heating,S002,p.5,epitaxial regrowth (SPER) mechanism,direct,high,
+C113,Top-device thermal budget not above 500 C for a few hours,S002,p.5,not exceed 500°C for a few hours,direct,high,
+C114,SOI process window about 0.8 J/cm2 with ~10 % margin (capped case),S002,p.6,with about 10% margin,direct,high,
+C115,Upper limit of window: melt reaches buried oxide interface giving poly-Si,S002,p.6,melt of the interface with the buried oxide,direct,high,
+C116,"BEOL metal damage threshold about 0.35 J/cm2, independent of PECVD oxide thickness",S002,p.6,0.35J/cm2) does not depend on the thickness of the PECVD oxide,direct,high,
+C117,Poly-Si NEMS: super lateral growth regime at 0.7 J/cm2,S002,p.7,(at 0.7J/cm2),direct,high,
+C118,"IGBT buffer: P implanted 3 MeV, Rp = 2.38 um, then laser ED 8.5-10 J/cm2 with assist heat",S002,p.7,"(3MeV, Rp=2.38",direct,high,
+C119,Near-perfect (~100 %) P activation over 4 um depth with assist heating,S002,p.8,(~100%) dopant activation has been achieved over 4,direct,high,
+C120,SiC bonds should not dissociate below 3000 K in equilibrium,S002,p.8,should not happen below 3000K,direct,high,
+C121,"Melt-like SiC anneal: heating localized in first 200 nm, sub-us",S002,p.8,within the first 200nm,direct,high,
+C122,SiC liquid phase segregates C and Si into Graphite/Poly-Si/4H-SiC stack,S002,p.8,leading to a Graphite/Poly,direct,high,
+C123,SiC activation occurred in both liquid and solid phase (data not shown),S002,p.8,implanted impurities both in liquid and solid phase,direct,medium,Data not shown in source
+C124,"SiC study ED 2.0-4.0 J/cm2, Al 160 keV 7e14 cm-2",S002,p.8,(ranging from 2.0 to 4.0J/cm2),direct,high,
+C125,Authors: LASSE / SCREEN Semiconductor Solutions (tool vendor),S002,p.1,"Laser Systems and Solutions of Europe (LASSE), SCREEN",direct,high,
+C201,3D-integrated CMOS acceptable thermal budget ~500 C for a few hours,S003,p.2,devices is known as 500,direct,high,
+C202,ns UV-LA below Si melting point does not melt the substrate,S003,p.5,ns UV-LA process does not melt the Si substrate,direct,high,
+C203,"Below melt, dopant diffusion strongly limited (even negligible)",S003,p.5,dopant diffusion would be strongly limited,direct,high,
+C204,"Melt: diffusion confined within melted region, box-like profile",S003,p.5,"their diffusion is limited within the melted region, having a box-like profile",direct,high,
+C205,FDSOI: ns UV-LA fully melts 5-7 nm amorphized Si layer then regrows monocrystalline,S003,p.5,fully melt the from 5 to 7 nm thick amorphized Si layer,direct,high,
+C206,ns UV-LA suppresses DIBL vs spike anneal,S003,p.5,ns UV-LA clearly shows a benefit for suppressing the drain-induced barrier lowering,direct,high,
+C207,Contact needs active carrier concentration close to 1e21 cm-3,S003,p.5,the active carrier concentration needs to be close to,direct,high,
+C208,SPER definition: implant-amorphized layer regrown to monocrystal without melting,S003,p.6,the semiconductor layer amorphized by the ion implantation of the dopants can be regrown into the monocrystalline state without melting,direct,high,
+C209,ns UV-LA SPER needs more than 20 laser pulses,S003,p.6,more than 20 times the irradiation of the laser pulse,direct,high,
+C210,Extending timescale toward us may help SPER productivity,S003,p.6,extending the process time scale towards,direct,high,
+C211,Segregation needs k=Cs/CL < 1; k depends on solidification front velocity V,S003,p.6,must be less than the unity,direct,high,
+C212,Increasing V makes k closer to unity,S003,p.6,increasing V makes k become closer to the unity,direct,high,
+C213,"Explosive melting: thin liquid layer (few to 10 nm) travels in depth, giving polycrystal",S003,p.6,a thin liquid layer (typically a few to 10 nm of thickness,direct,medium,
+C214,Al in SiGe: active / solubility ratio almost unity (self-compensation),S003,p.6,that of Al in SiGe is almost unity,direct,high,
+C215,Sb LPER in FinFET contact: V about 4 m/s from 3D TCAD,S003,p.9,simulation is about 4m/s,direct,high,"Simulated, not measured"
+C216,Sb solid solubility; >10x gain expected at 4 m/s,S003,p.9,more than 10 times at 4 m/s,direct,medium,Expected gain read from Fig. 7
+C217,Melt must reach the end tail of the implant profile or EOR defects remain,S003,p.9,mandatory to melt the ion-implanted region down to the end tail of the dopant profile,direct,high,
+C218,Stacking faults from initial a/c interface even at full melt,S003,p.9,stacking faults starting from the initial amorphous/crystalline,direct,high,
+C219,ns SPER needs multiple thermally independent shots to fully crystallize,S003,p.10,multiplying thermally independent laser shots is necessary to fully crystallize,direct,high,
+C220,"SPER rate 0.8-1.8 nm per shot in ~10 nm a-Si (B, P, As)",S003,p.10,from 0.8 to 1.8 nm per shot in roughly 10 nm thick,direct,high,
+C221,SPER surface roughness about 0.10 nm RMS,S003,p.10,(about 0.10 nm),direct,high,
+C222,Estimated SPER active carrier concentration could exceed that of LPER (rough estimate),S003,p.10,could be higher than that of ns UV-LA LPER,direct,medium,Rough estimate
+C223,Resistivity estimate assumes conducting layer thickness equals amorphization depth,S003,p.10,an assumption that the conducting layer thickness is equal to the amorphization depth,direct,high,
+C224,us UV-LA SPER: active carriers by DHEM above 1e21 near the surface; surface segregation observed,S003,p.11,differential Hall effect methodology (DHEM) [59] outperforms,direct,medium,
+C225,Unclear whether ns SPER also shows surface segregation,S003,p.11,It is uncertain if our previously reported ns UV-LA processes also induce it,direct,high,
+C226,Deactivation test with ns UV-LA: sheet-resistance degradation limited to about 5 %,S003,p.11,maximum sheet resistance degradation is limited to about 5%,direct,high,"Deactivation by ns UV-LA only, not furnace"
+C227,ns UV-LA dwell time of order 1e-7 s at ~900 C effective temperature,S003,p.4,the dwell time is in the order of,direct,medium,
+C228,ns/us timescale is long enough for thermal equilibrium but chemically/mechanically out of equilibrium,S003,p.19,is long enough to be at thermal equilibrium,direct,high,
+C229,Authors LASSE; commercialized 300 mm UV-LA tool (vendor affiliation),S003,p.2,our 300 mm process-compatible UV-LA equipment is commercialized,direct,high,
+C301,Adoption in CMOS HVM never achieved due to dopant deactivation by later thermal budget,S001,p.2,adoption for high-volume manufacturing was never achieved in CMOS due to integration issues such as dopant deactivation,direct,high,
+C302,"Melt regime: dopant activation above solid-phase equilibrium limit, near-perfect LPER",S001,p.2,highly localized dopant activation above the solid-phase equilibrium limit,direct,high,
+C303,IGBT front side must stay below 400 C (or 200 C),S001,p.3,should be limited to less than 400°C,direct,high,
+C304,SiC: heating within first 200 nm; equilibrium dissociation >3000 K,S001,p.5,heating within the first 200nm,direct,high,Near-verbatim overlap with S002 p.8
+C305,SiC sub-melt: 1000 short pulses recover crystal and activate dopants,S001,p.5,submelt regime with multiple short pulses (1000 times),direct,high,
+C306,"SiC sub-melt requires non-amorphizing (hot, 500 C) implant and substrate heating up to 800 C",S001,p.6,multiple pulse irradiation with substrate heating (up to 800°C),direct,high,
+C307,SiC sub-melt needs relatively high substrate temperature: productivity issue,S001,p.6,relatively high substrate temperature,direct,high,
+C308,Laser annealing at ms timescales first adopted in mid-2000s,S001,p.9,initial adoption of laser annealing for semiconductor device manufacturing started in the mid-2000s,direct,high,
+C309,"3D sequential BEOL limit 500 C, 2 h at most",S001,p.9,"500°C, 2 h at most",direct,high,
+C310,"40-nm Si:P epi, 4.6 % P: sub-us melt gives close to 100 % activation",S001,p.13,close to 100% activation,direct,high,
+C311,Si:P epi layer 40 nm with 4.6 % P content,S001,p.13,highly doped 40-nm Si:P epitaxial layer (4.6% P content,direct,high,
+C312,Best p-type contacts (<1e-9 ohm cm2) when dopants segregate near the contact interface,S001,p.16,dopants can be segregated close to the contact interface,direct,high,
+C313,Solute trapping at relatively high solidification velocity (1-2 m/s),S001,p.16,relatively high solidification velocities,direct,high,
+C314,pFinFET: sub-us melt gave ~40 % lower external resistance than ms laser,S001,p.17,external resistance of about 40%,direct,high,
+C315,"Failure at higher ED due to channel or sub-fin melting (dopant diffusion, Ge intermixing)",S001,p.17,channel or even sub-fin melting,direct,high,
+C316,"Essential 3D benefit is selectivity/low budget, not metastable melt activation that later steps may remove",S001,p.19,"metastable activation by melting, which may disappear by deactivation from the following steps",direct,high,
+C317,"Author affiliation: LASSE / SCREEN (same group as S002, S003)",S001,p.1,"Laser Systems and Solutions of Europe, SCREEN",direct,high,
+C501,Minimum shots to regrow ~10 nm a-Si at 0.8-1.8 nm/shot: 6 to 13 (10/1.8=5.6; 10/0.8=12.5),S003,p.10,,derived,medium,10 nm / (1.8 or 0.8 nm per shot) using C220 maximum rates; S003 p.6 states >20 pulses (C209) so typical rate must be <0.5 nm/shot
+C502,"Peak Gaussian fluence 2E/(pi w^2) with E=86 nJ and w=6 um = 152 mJ/cm2, matching the stated 153 mJ/cm2 (so S004 energy density is the peak, not the mean, fluence)",S004,p.9,,derived,medium,Assumes waist w is the 1/e^2 radius (not stated); mean fluence E/(pi w^2) would be 76 mJ/cm2
+C503,hc/lambda for 248 nm = 4.999 eV (S004 states about 4.9 eV); 532 nm = 2.331 eV (S004: about 2.3 eV),S004,p.15,,derived,high,hc = 1239.84 eV nm (external constant)
+C504,Box-profile mean concentration of the B melt anneal: dose 1e16 cm-2 over 40 nm = 2.5e21 cm-3 if fully retained,S002,p.4,,derived,medium,Dose and junction depth from C109/C110; box profile after melt per C204; retained-dose fraction not given in source
+C505,4.6 % P in Si = 2.3e21 cm-3 requires Si atomic density 5.0e22 cm-3 (consistent with S001),S001,p.13,,derived,high,0.046 x 5.0e22; Si density is external background
+C506,"Sb trapped by LPER at 4 m/s: >=10 x 6.8e19 = 6.8e20 cm-3, still below the ~1e21 target (C207)",S003,p.9,,derived,low,Lower bound read from Fig. 7 via text; Sb solubility 6.8e19 from S003 p.9 text; no electrical data in source
+C507,Inverting fc = Ic/(Ic+Ia): Ia/Ic = 0.104 (fc 90.6 %) and 0.134 (fc 88.2 %),S004,p.9,,derived,high,Algebra on Eq. 2 and C016
+C508,"Si melt threshold 1.7 J/cm2 (S002, 160 ns) is ~24x the a-Si F1 = 70 mJ/cm2 (S004, 355 nm, 12-15 ns, thin film): different phase (c-Si vs a-Si), pulse length, wavelength and film stack",S002,p.2,,derived,low,"Cross-source comparison of non-identical conditions; indicates amorphization/film stack dominates, not a contradiction"
+C230,Contact carrier transport at the Schottky interface should be dominated by field emission,S003,p.6,should be dominated by the field-emission model,direct,high,
+C231,SPER front keeps a flat a/c interface; RMS roughness stays small,S003,p.10,maintains a good flatness,direct,high,
+C232,Thermal budget localized in a sub-um region near the surface (S002 claim),S002,p.5,localize the thermal budget,direct,medium,Compare with L_th estimate in chapter
+C233,Ge amorphous top surface: melting/recrystallization driven by explosive crystallization,S002,p.5,is driven by the explosive crystallization phenomenon,direct,medium,
+C234,Poly-Si NEMS: resistance falls with ED (explosive crystallization) until SLG threshold,S002,p.7,The resistance decreases with the energy,direct,medium,
+C235,Ambient air can react with the heated material; Ar or vacuum avoid this,S004,p.5,The presence of air can cause,direct,high,
+C236,Sub-melt SiC anneal shows less surface morphology degradation than furnace,S001,p.6,Less degradation of surface morphology could also be obtained,direct,high,
+C237,Molten state: dopant diffusion and nonequilibrium segregation occur with ultrarapid recrystallization,S004,p.3,dopant diffusion in the liquid state and nonequilibrium segregation occur together with ultrarapid recrystallization,direct,high,
+C238,Si:P laser cases: diffusion kept under control,S001,p.13,Diffusion was kept under control in all laser cases,direct,high,
+C239,Millisecond laser anneal range several hundred us to 10 ms,S001,p.9,to 10 ms),direct,medium,
+C240,"Si:P full-melt UV laser anneal condition 1.8 J/cm2, 160 ns (ms anneal reference 1200 C)",S002,p.3,"(1.8J/cm2, 160ns)",direct,high,
+C241,SiC sub-melt TEM sample subjected to 0.40 J/cm2 laser fluence,S001,p.5,subjected to 0.40J/cm2 laser fluence,direct,medium,
+C242,Fine segregation: Sb in Si and Ga/Al/In in SiGe segregate to surface during ns UV-LA LPER,S003,p.6,shows such a surface segregation during ns UV-LA-induced LPER,direct,low,
