@@ -7,6 +7,12 @@
       "skillPath": "skills/aeon/SKILL.md",
       "computedHash": "2054a859f8ffbf7a0ae4cb10320af12d768255edc1be04fdec2e4a5e6e9141e9"
     },
+    "book-to-skill": {
+      "source": "virgiliojr94/book-to-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "e6a1dffe4b36284ba6410b71e1aa9dc9083dc234a8de455e08d1da4a319dcd38"
+    },
     "experimental-design": {
       "source": "K-Dense-AI/scientific-agent-skills",
       "sourceType": "github",
